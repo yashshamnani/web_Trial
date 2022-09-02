@@ -1,84 +1,110 @@
-body{
-    /* by default margin is 8 px */
-    margin:   2rem;
+ /* basic resets */
+body {
+    /* margin-left: 1rem;
+    margin-right:1rem; */
+    margin: 0rem 2rem;
 }
-*{
+
+* {
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
-a{
-    /* used to remove underline in anchor tag */
+
+a {
     text-decoration: none;
-     
-}
-li{
-    list-style: none; /*used to style  dot in front of li elements*/
-}
-.footer-content{
-     
-     
-    color: white;
-    font-weight: 200;/*used to change boldness*/
-    font-size: medium;
-    text-transform: uppercase;
-}
-.footer-parent{
-    height: 5rem;
-    background-color: black;
-    display: flex;  /* used to make content verical to horizantal always in parent */
-    justify-content: center; /*used to manage horizontal spacing*/
-    align-items: center; /*used to manage vertical*/
-     
-}
- 
-
-.parent{
-    /* border: 10px solid red; */
-    display: flex;
-    text-align: center;
-    margin: 2rem;
-    justify-content: space-between;
- }
- .child{
-    width: 30%; /*parent ka 30% width*/
- }
-  
- ul{
-    display: flex;
- }
- header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
- }
- ul{
-    display: flex;
-    width: 20rem;
-    justify-content: flex-start;
- }
-ul>li{
-     width: 30%;
-    font-size: 1.5rem;
+    /*to remove underline in anchor*/
 }
 
-.main{
-    width: 100%;
-    height: auto; /*to make image responsive*/
+li {
+    list-style: none;
+    /*to remove dot in front of li elements*/
 }
- 
 
-/*used to hover on header*/
- 
 a:link {
-    color: green;
-}
-a:visited {
-    color: green;
-}
-a:hover {
     color: black;
 }
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: red
+}
+
 a:active {
-    color: yellow;
+    color: red;
+}
+
+a {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+/* header */
+header {
+    display: flex;
+    /* manages space horizontally  */
+    justify-content: space-between;
+    align-items: center;  
+}
+header h1 {
+    margin-left: 2rem;
+}
+nav {
+    margin-right: 1rem;
+    
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 20rem;
+
+}
+ul>li {
+    width: 30%;
+    font-size: 1.5rem;
+    ;
+}
+/* /**********main image */
+/* don't cram just copy paste it */
+.main-img {
+    width: 100%;
+    height: auto;
+
+}
+
+/* ***********main */
+.parent {
+    /* border: 10px solid red; */
+    margin-top: 2rem;
+    display: flex;
+    /* text inside that parent 
+    includes image will be centered  */
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.child {
+    width: 30%;
+}
+
+/* footer tag */
+.footer_parent {
+    height: 5rem;
+    background-color: black;
+    /* it is used to perfectly center a div*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_content {
+    color: white;
+    /* boldness */
+    font-weight: 500;
+    font-size: 1.5rem;
+    /* enforce uppercase */
+    text-transform: uppercase;
 }
