@@ -1,0 +1,84 @@
+body{
+    /* by default margin is 8 px */
+    margin:   2rem;
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+a{
+    /* used to remove underline in anchor tag */
+    text-decoration: none;
+     
+}
+li{
+    list-style: none; /*used to style  dot in front of li elements*/
+}
+.footer-content{
+     
+     
+    color: white;
+    font-weight: 200;/*used to change boldness*/
+    font-size: medium;
+    text-transform: uppercase;
+}
+.footer-parent{
+    height: 5rem;
+    background-color: black;
+    display: flex;  /* used to make content verical to horizantal always in parent */
+    justify-content: center; /*used to manage horizontal spacing*/
+    align-items: center; /*used to manage vertical*/
+     
+}
+ 
+
+.parent{
+    /* border: 10px solid red; */
+    display: flex;
+    text-align: center;
+    margin: 2rem;
+    justify-content: space-between;
+ }
+ .child{
+    width: 30%; /*parent ka 30% width*/
+ }
+  
+ ul{
+    display: flex;
+ }
+ header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+ }
+ ul{
+    display: flex;
+    width: 20rem;
+    justify-content: flex-start;
+ }
+ul>li{
+     width: 30%;
+    font-size: 1.5rem;
+}
+
+.main{
+    width: 100%;
+    height: auto; /*to make image responsive*/
+}
+ 
+
+/*used to hover on header*/
+ 
+a:link {
+    color: green;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    color: black;
+}
+a:active {
+    color: yellow;
+}
